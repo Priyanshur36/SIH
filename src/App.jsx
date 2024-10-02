@@ -5,6 +5,7 @@ import CryptoData from './components/CryptoData';
 import ExchangeRates from './components/ExchangeRates';
 import TradeCrypto from './components/TradeCrypto';
 import TradeHistory from './components/TradeHistory';
+import HomePage from './components/HomePage';
 import './App.css';
 
 const App = () => {
@@ -13,7 +14,7 @@ const App = () => {
       <div className="App">
         <NavBar />
         <Routes>
-          <Route path="/" element={<CryptoData />} />
+          <Route path="/" element={<HomePage />} />
           <Route path="/market" element={<ExchangeRates />} />
           <Route path="/portfolio" element={<div>Portfolio Page</div>} />
           <Route path="/trade" element={<TradeCrypto />} />
